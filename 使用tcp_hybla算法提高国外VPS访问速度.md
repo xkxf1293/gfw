@@ -89,8 +89,6 @@
 	# 设置高延迟hybal，低延迟cubic
 	net.ipv4.tcp_congestion_control=hybla
 	
-    # max processor input queue
-    net.core.netdev_max_backlog = 4096
 	#定义了系统中每一个端口最大的监听队列的长度,这是个全局的参数。backlog默认会限制到128，而nginx默认为511。较大内存的Linux，65535数值一般就可以了。
 	net.core.somaxconn = 4096
 
@@ -118,7 +116,6 @@
 	net.ipv4.tcp_congestion_control=hybla
 	"net.ipv4.tcp_congestion_control=cubic
 	
-    net.core.netdev_max_backlog = 4096
 	net.core.somaxconn = 4096
 	
 保存后，可以用下面命令让设置立即生效：
