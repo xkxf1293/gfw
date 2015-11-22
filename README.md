@@ -30,8 +30,8 @@ rsc="1" #网卡接收端合并开关；设为 1 表示开启，设为 0 表示�
 /serverspeeder/bin/serverSpeeder.sh stats
 /serverspeeder/bin/serverSpeeder.sh help
 ```
-[hybla算法](https://github.com/weaming/CodeCourses/blob/master/FuckGFW/使用tcp_hybla算法提高国外VPS访问速度.md)
-[isetsuna](http://www.isetsuna.com/shadowsocks/deploy-optimizer-usage/)
+- [hybla算法](https://github.com/weaming/gfw/blob/master/使用tcp_hybla算法提高国外VPS访问速度.md)
+- [isetsuna](http://www.isetsuna.com/shadowsocks/deploy-optimizer-usage/)
 
 2 /etc/shadowsocks.json
 ```
