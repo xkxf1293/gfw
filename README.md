@@ -2,11 +2,13 @@
 
 1 setup
 ```
+# shadowsocks
 wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
 chmod +x shadowsocks.sh
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
-
-
+```
+```
+# netspeeder on debian
 wget --no-check-certificate https://raw.githubusercontent.com/tennfy/debian_netspeeder_tennfy/master/debian_netspeeder_tennfy.sh
 chmod a+x debian_netspeeder_tennfy.sh
 bash debian_netspeeder_tennfy.sh
@@ -15,8 +17,9 @@ echo "Asia/Shanghai" >/etc/timezone
 echo '0 4 * * * root nohup /root/net_speeder venet0 "ip" >/dev/null 2>&1 &' >>/etc/crontab
 echo "0 3 * * * root killall net_speeder" >>/etc/crontab
 /etc/init.d/cron restart
-
-
+```
+```
+# serverSpeeder 锐速
 wget http://my.serverspeeder.com/d/ls/serverSpeederInstaller.tar.gz
 tar xzvf serverSpeederInstaller.tar.gz
 bash serverSpeederInstaller.sh
@@ -31,7 +34,7 @@ rsc="1" #网卡接收端合并开关；设为 1 表示开启，设为 0 表示�
 /serverspeeder/bin/serverSpeeder.sh help
 ```
 - [hybla算法](https://github.com/weaming/gfw/blob/master/使用tcp_hybla算法提高国外VPS访问速度.md)
-- [isetsuna](http://www.isetsuna.com/shadowsocks/deploy-optimizer-usage/)
+- [isetsuna 教程参考](http://www.isetsuna.com/shadowsocks/deploy-optimizer-usage/)
 
 2 /etc/shadowsocks.json
 ```
@@ -72,5 +75,6 @@ rsc="1" #网卡接收端合并开关；设为 1 表示开启，设为 0 表示�
 
 ps aux|grep net_speeder|grep -v grep
 killall net_speeder
-nohup /root/net_speeder venet0 "ip" >/dev/null 2>&1 &
+ifconfig #查看网卡
+nohup /root/net_speeder venet0 "ip" >/dev/null 2>&1 &   # net_speeder要根据具体网卡和架构来运行
 ```
