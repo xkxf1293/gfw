@@ -6,7 +6,7 @@
 ==
 
 ```
-mkdir ggproxy
+mkdir ggproxy; cd ggproxy
 apt-get install build-essential git gcc g++ make
 wget "http://nginx.org/download/nginx-1.4.7.tar.gz"
 wget "ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.36.tar.gz"
