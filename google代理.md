@@ -63,7 +63,6 @@ link：http://ju.outofmemory.cn/entry/207820
 --
 1.一台可用的VPS（[虚拟专用服务器](http://baike.baidu.com/view/309631.htm)）；
 2.伺服器系统选择：centos
-<!--more-->
 
 准备工作
 --
@@ -216,8 +215,11 @@ nginx: configuration file /usr/local/nginx-1.7.8/conf/nginx.conf test is success
 链接
 --
 本文参照文章：[limboshop](http://story.limboshop.info/2015/06/17/free-search-project)
+
 项目地址：https://github.com/cuber/ngx_http_google_filter_module
+
 如何安装nginx第三方模块：http://www.ttlsa.com/nginx/how-to-install-nginx-third-modules/
+
 SSL+Nginxの配置相关知识：https://github.com/cuber/ngx_http_google_filter_module/issues/27
 
 参考
