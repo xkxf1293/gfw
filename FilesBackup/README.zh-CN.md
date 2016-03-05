@@ -1,3 +1,5 @@
+From: https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md
+
 Nginx Google 扩展
 =================
 
