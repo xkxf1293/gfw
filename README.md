@@ -18,6 +18,19 @@ echo '0 4 * * * root nohup /root/net_speeder venet0 "ip" >/dev/null 2>&1 &' >>/e
 echo "0 3 * * * root killall net_speeder" >>/etc/crontab
 /etc/init.d/cron restart
 ```
+
+### 查看虚拟技术
+
+```
+wget http://people.redhat.com/~rjones/virt-what/files/virt-what-1.15.tar.gz
+tar zxvf virt-what-1.15.tar.gz
+cd virt-what-1.15/
+./configure
+make && make install
+```
+
+再运行 virt-what ，脚本就会判断出当前环境所使用的虚拟技术
+
 ```
 # serverSpeeder 锐速
 wget http://my.serverspeeder.com/d/ls/serverSpeederInstaller.tar.gz
