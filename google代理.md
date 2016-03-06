@@ -2,6 +2,22 @@
 
 -----
 
+2016.3.6更新 从发行版迁移
+==
+
+```
+$ nginx -V
+nginx version: nginx/1.8.0
+built by gcc 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) 
+built with OpenSSL 1.0.1e-fips 11 Feb 2013
+TLS SNI support enabled
+configure arguments: --user=www --group=www --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module --with-http_spdy_module --with-http_gzip_static_module --with-ipv6 --with-http_sub_module
+
+./configure --user=www --group=www --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module --with-http_spdy_module --with-http_gzip_static_module --with-ipv6 --with-http_sub_module \
+--add-module=../ngx_http_google_filter_module \
+--add-module=../ngx_http_substitutions_filter_module
+```
+
 2015.11.20更新
 ==
 
