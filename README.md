@@ -150,3 +150,5 @@ sh net_speeder_lazyinstall.sh
 ```
 
 Usage: `nohup /usr/local/net_speeder/net_speeder eth0 "ip" >/dev/null 2>&1 &`
+
+关闭net_speeder：`killall net_speeder`
