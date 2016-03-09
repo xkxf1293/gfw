@@ -141,3 +141,12 @@ Linux Cooked interface使用编译（venetX，OpenVZ）： `sh build.sh -DCOOKED
 参数：`./net_speeder 网卡名 加速规则（bpf规则）`
 
 最简单用法： `# ./net_speeder venet0 "ip"` 加速所有ip协议数据
+
+centOS 懒人脚本
+---
+```
+wget --no-check-certificate https://gist.githubusercontent.com/LazyZhu/dc3f2f84c336a08fd6a5/raw/d8aa4bcf955409e28a262ccf52921a65fe49da99/net_speeder_lazyinstall.sh
+sh net_speeder_lazyinstall.sh
+```
+
+Usage: `nohup /usr/local/net_speeder/net_speeder eth0 "ip" >/dev/null 2>&1 &`
