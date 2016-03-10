@@ -114,7 +114,7 @@
 	net.core.netdev_max_backlog = 250000
 	net.ipv4.tcp_mtu_probing=1
 	net.ipv4.tcp_congestion_control=hybla
-	"net.ipv4.tcp_congestion_control=cubic
+	#net.ipv4.tcp_congestion_control=cubic
 	
 	net.core.somaxconn = 4096
 	
