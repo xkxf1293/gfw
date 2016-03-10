@@ -26,7 +26,7 @@ sh net_speeder_lazyinstall.sh
 nohup /usr/local/net_speeder/net_speeder eth0 "ip" >/dev/null 2>&1 &
 
 #supervisor
-pip install supervisor -y;supervisord;
+pip install supervisor;supervisord;
 echo_supervisord_conf > /etc/supervisord.conf;
 ln -s /etc/supervisord.conf ~/conf/supervisord.conf;
 
