@@ -4,7 +4,7 @@ yum install git vim tmux wget -y;
 yum install -y vixie-cron;
 cd github;git clone https://github.com/weaming/vimrc;cd vimrc;sh install.sh;. ~/.bashrc;vim;
 
-# kvm?
+# kvm openvz
 dload
 wget http://people.redhat.com/~rjones/virt-what/files/virt-what-1.15.tar.gz
 tar zxvf virt-what-1.15.tar.gz
@@ -32,6 +32,7 @@ ln -s /etc/supervisord.conf ~/conf/supervisord.conf;
 
 #tmux
 wget -c http://soft.vpser.net/lnmp/lnmp1.2-full.tar.gz && tar zxf lnmp1.2-full.tar.gz && cd lnmp1.2-full && ./install.sh lnmp
+ln -s /usr/local/nginx/conf/nginx.conf /root/conf/nginx.conf
 
 #www
 cd /www/;
