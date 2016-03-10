@@ -4,7 +4,7 @@
 # tail -f /fs/server.log
 
 rm -f install_fs.sh
-wget  http://fs.d1sm.net/finalspeed/install_fs.sh
+wget http://fs.d1sm.net/finalspeed/install_fs.sh
 chmod +x install_fs.sh
 ./install_fs.sh 2>&1 | tee install.log
 
