@@ -19,6 +19,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsoc
 chmod +x shadowsocks.sh
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
 ln -s /etc/init.d/shadowsocks /usr/local/bin/shadowsocks;
+ln -s /etc/shadowsocks.json /root/conf/ss.json;
 
 wget --no-check-certificate https://gist.githubusercontent.com/LazyZhu/dc3f2f84c336a08fd6a5/raw/d8aa4bcf955409e28a262ccf52921a65fe49da99/net_speeder_lazyinstall.sh
 sh net_speeder_lazyinstall.sh
