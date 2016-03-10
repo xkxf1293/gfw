@@ -1,5 +1,5 @@
 ```
-cd ~;mkdir github conf 下载 /keys /www /dload;
+cd ~;mkdir github conf /keys /www /dload;
 yum install git vim tmux wget -y;
 yum install -y vixie-cron;
 cd github;git clone https://github.com/weaming/vimrc;cd vimrc;sh install.sh;. ~/.bashrc;vim;
