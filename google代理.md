@@ -18,9 +18,13 @@ cd lnmp1.2-full/src;
 git clone https://github.com/cuber/ngx_http_google_filter_module
 git clone https://github.com/yaoweibin/ngx_http_substitutions_filter_module
 
+cd nginx*
 ./configure --user=www --group=www --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module --with-http_spdy_module --with-http_gzip_static_module --with-ipv6 --with-http_sub_module \
 --add-module=../ngx_http_google_filter_module \
 --add-module=../ngx_http_substitutions_filter_module
+make
+
+cp -rf objs/nginx /usr/local/nginx/sbin/nginx
 ```
 
 2015.11.20更新
