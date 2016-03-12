@@ -6,6 +6,19 @@
 wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
 chmod +x shadowsocks.sh
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
+
+# chacha20
+yum install m2crypto
+wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz
+tar zxf LATEST.tar.gz
+cd libsodium*
+./configure
+make && make install
+ldconfig
+
+# 修复关联
+echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
+ldconfig
 ```
 ```
 # netspeeder on debian
