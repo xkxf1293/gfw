@@ -7,6 +7,12 @@ cd github;git clone https://github.com/weaming/vimrc;cd vimrc;sh install.sh;. ~/
 # docker
 wget -q -O- https://get.docker.com/ | sh
 
+# docker shell from daocloud
+curl -sSL https://get.daocloud.io/docker | sh 
+sudo chkconfig docker on 
+sudo systemctl start docker
+sudo systemctl status docker
+
 # kvm openvz
 dload
 wget http://people.redhat.com/~rjones/virt-what/files/virt-what-1.15.tar.gz
