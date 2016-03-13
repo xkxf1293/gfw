@@ -30,9 +30,14 @@ chmod +x shadowsocks.sh
 ln -s /etc/init.d/shadowsocks /usr/local/bin/shadowsocks;
 ln -s /etc/shadowsocks.json /root/conf/ss.json;
 
+# netspeeder on CentOS
+yum install vixie-cron -y
 wget --no-check-certificate https://gist.githubusercontent.com/LazyZhu/dc3f2f84c336a08fd6a5/raw/d8aa4bcf955409e28a262ccf52921a65fe49da99/net_speeder_lazyinstall.sh
 sh net_speeder_lazyinstall.sh
 nohup /usr/local/net_speeder/net_speeder eth0 "ip" >/dev/null 2>&1 &
+echo '0 4 * * * root nohup /usr/local/net_speeder/net_speeder eth0 "ip" >/dev/null 2>&1 &' >>/etc/crontab
+echo "0 3 * * * root killall net_speeder" >>/etc/crontab
+/etc/init.d/crond restart
 
 #supervisor
 pip install supervisor;supervisord;
