@@ -79,4 +79,6 @@ cd ttrss/themes/
 wget https://github.com/levito/tt-rss-feedly-theme/archive/master.zip;unzip master.zip;rm -f master.zip;cd tt-rss-feedly-theme-master;
 rm -rf README.md feedly-screenshots/;mv * ../;cd ..;rm -rf tt-rss-feedly-theme-master/;
 cd /www/;chmod 755 -R *;chown www:www -R *;
+
+cd /www/ttrss/;wget https://github.com/weaming/gfw/raw/master/FilesBackup/tz.php;
 ```
