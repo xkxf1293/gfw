@@ -50,6 +50,7 @@ ln -s /usr/local/nginx/conf/nginx.conf /root/conf/nginx.conf
 
 #www
 cd /www/;
+openssl dhparam -out dhparams.pem 2048
 #wget https://github.com/gogits/gogs/releases/download/v0.8.43/linux_386.tar.gz;
 wget https://github.com/gogits/gogs/releases/download/v0.8.43/linux_amd64.tar.gz
 #wget https://github.com/spf13/hugo/releases/download/v0.15/hugo_0.15_linux_386.tar.gz
