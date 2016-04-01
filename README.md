@@ -147,8 +147,9 @@ A program to speed up single thread download upon long delay and unstable networ
 下载epel：https://fedoraproject.org/wiki/EPEL/zh-cn 例：CentOS6 64位：
 
     wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
-
-如果是centos5，则在epel/5/下。
+    
+    centos 5: https://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm
+    centos 7: https://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rp
 
 然后安装epel：`rpm -ivh epel-release-X-Y.noarch.rpm`
 
